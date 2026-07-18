@@ -7,7 +7,7 @@ configuration:
   analytics:
     provider: plausible
   locale: fr-FR
-  baseUrl: sonosaure.github.io/sonosaure
+  baseUrl: sonosaure.github.io/Sonosaure
   ignorePatterns:
     - private
     - templates
