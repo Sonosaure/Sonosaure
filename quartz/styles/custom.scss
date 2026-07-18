@@ -1,2 +1,207 @@
 @use "./variables.scss" as *;
 
+
+
+/* Titre Sonosaure en haut à gauche */
+.page-title {
+  font-size: 1.8rem !important;
+  font-weight: 600;
+  color: #73afd3 !important; /* bleu-gris doux */
+  margin-bottom: 1.2rem;
+  text-transform: none;
+}
+
+/* Titre "Explorateur" dans la sidebar */
+.title-button.explorer-toggle h2 {
+  color: #225474 !important; /* bleu foncé */
+}
+
+/* Titres de sections dans la sidebar : Jardin Sonore */
+.sidebar .folder-title {
+  color: #73afd3 !important; /* bleu-gris doux */
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.3px;
+}
+
+
+/* Sous-dossiers : Musique, Presse, Son */
+.sidebar .tree-item-children .folder-title {
+  color: #9bbcd1 !important; /* bleu Sonosaure */
+}
+
+/* Notes dans les sous-dossiers */
+.sidebar .tree-item-children .nav-file-title {
+  color: #9bbcd1 !important; /* bleu Sonosaure */
+}
+
+
+
+/* Heading hierarchy SPORADIC */
+
+/* H1 — main page title — light gray */
+h1 {
+  color: #e0e1dd !important;
+}
+
+/* H2 — section titles — Sonosaure blue */
+h2 {
+  color: #9bbcd1 !important;
+}
+
+/* H3 — deeper sections — denser blue */
+h3 {
+  color: #9bbcd1 !important;
+}
+
+/* H4 — red */
+h4 {
+  color: #d1495b !important;
+}
+
+/* H5 — light gray */
+h5 {
+  color: #e0e1dd !important;
+}
+
+h6 {
+  font-family: "Kalam", cursive !important;
+  font-size: 0.9rem;
+  color: #9bbcd1 !important;
+  letter-spacing: 0.4px;
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+
+/* Editorial hyperlinks — blue text + red underline */
+.page a,
+.content a,
+.article-title a,
+.content-meta a,
+.breadcrumbs a,
+.tag-page a:not(.tag) {
+  text-decoration: none !important;
+  background: none !important;
+  color: #9bbcd1 !important; /* bleu-gris doux */
+  border-bottom: 2px solid #d1495b !important;
+  padding-bottom: 2px;
+}
+
+.page a:hover,
+.content a:hover,
+.article-title a:hover,
+.content-meta a:hover,
+.breadcrumbs a:hover,
+.folder-page a:hover,
+.tag-page a:hover {
+  border-bottom-color: #b4374a !important;
+}
+
+/* LIENS TECHNIQUES NEUTRES */
+.sidebar a,
+.explorer a,
+.search a,
+.graph a,
+.toolbar a {
+  border-bottom: none !important;
+  box-shadow: none !important;
+  text-decoration: none !important;
+  background: none !important;
+  color: inherit !important;
+}
+
+/* gras/Bold text */
+.markdown-rendered strong {
+  color: #9bbcd1 !important;
+  font-weight: 600 !important;
+}
+
+/* Enlever le rouge des titres dans les listings de dossier */
+.folder-page h2 {
+  color: #e0e1dd !important;
+}
+
+/* Et le lien à l’intérieur */
+.folder-page h2 a {
+  color: #e0e1dd !important;
+  border-bottom: 2px solid #e0e1dd !important;
+}
+
+/* Explorer title (left menu) */
+.explorer .title {
+  color: #e0e1dd !important;
+  font-weight: 700 !important;
+}
+
+/* SPORADIC — META (date + reading time + modified/created) */
+.content-meta,
+.content-meta span {
+  font-family: 'Kalam', cursive !important;
+  font-size: 1 rem !important;
+  color: #2E5B78 !important;
+  letter-spacing: 0.4px;
+  line-height: 1.1;
+}
+
+
+/* Remove red underline from tags */
+.page a.tag-link,
+.content a.tag-link {
+  border-bottom: none !important;
+}
+
+/* SPORADIC tag style — translucent red background */
+.page a.tag-link,
+.content a.tag-link {
+  all: unset;
+
+  display: inline-flex;                 /* prevents ghost underline */
+  align-items: center;                  /* keeps text aligned */
+  line-height: 1;                       /* removes baseline gap */
+
+  color: #d15b49 !important;            /* red text */
+  background-color: rgba(209, 91, 73, 0.18); /* translucent red */
+  border: 1px solid rgba(209, 91, 73, 0.35); /* subtle outline */
+
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  cursor: pointer;
+}
+
+/* Hover */
+.page a.tag-link:hover,
+.content a.tag-link:hover {
+  background-color: rgba(209, 91, 73, 0.30) !important;
+  color: #ffffff !important;
+}
+
+
+.page a.tag-link,
+.content a.tag-link {
+  border-bottom: none !important;
+  all: unset;
+
+  display: inline-flex;
+  align-items: center;
+  line-height: 1;
+
+  color: rgb(197, 69, 69) !important;                 /* hover text color */
+  background-color: rgba(209, 91, 73, 0.509); /* hover background */
+  box-shadow: inset 0 0 0 1px rgba(209, 91, 73, 0.026);
+
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  cursor: pointer;
+}
+
+
+/* Hide only the duplicate tag */
+a.tag-link.alias {
+  display: none !important;
+}
+

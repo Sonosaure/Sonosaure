@@ -1,12 +1,12 @@
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
-  pageTitle: Quartz 5
-  pageTitleSuffix: ""
+  pageTitle: Sonosaure
+  pageTitleSuffix: "Jardin sonore"
   enableSPA: true
   enablePopovers: true
   analytics:
     provider: plausible
-  locale: en-US
+  locale: fr-FR
   baseUrl: sonosaure.github.io/sonosaure
   ignorePatterns:
     - private
@@ -16,9 +16,11 @@ configuration:
     fontOrigin: googleFonts
     cdnCaching: true
     typography:
-      header: Schibsted Grotesk
-      body: Source Sans Pro
+      header: IBM Plex Sans
+      body: IBM Plex Sans
       code: IBM Plex Mono
+      handwritten: Kalam
+      bodySize: 1.1rem
     colors:
       lightMode:
         light: "#faf8f8"
@@ -31,15 +33,15 @@ configuration:
         highlight: rgba(143, 159, 169, 0.15)
         textHighlight: "#fff23688"
       darkMode:
-        light: "#161618"
-        lightgray: "#393639"
-        gray: "#646464"
-        darkgray: "#d4d4d4"
-        dark: "#ebebec"
-        secondary: "#7b97aa"
-        tertiary: "#84a59d"
-        highlight: rgba(143, 159, 169, 0.15)
-        textHighlight: "#b3aa0288"
+        light: "#021B29"        # fond bleu profond
+        lightgray: "#415a77"	# borders (bleu gris foncé
+        gray: "#778da9"		# graph links, heavier borders (blue gris)
+        darkgray: "#e0e1dd"	# body text (white)
+        dark: "#778DA9"       	# header text and icons (bleu)
+        secondary: "#9bbcd1"	# link colour, current graph node lighter and lighter blues
+        tertiary: "#bcd7e8"	# hover states  and visited graph nodes
+        highlight: "0D1B2A"	# internal link bg, highlighted text/code
+        textHighlight: "#778da9"
 plugins:
   - source: github:quartz-community/created-modified-date
     enabled: true
@@ -78,7 +80,7 @@ plugins:
     enabled: true
     order: 40
   - source: github:quartz-community/table-of-contents
-    enabled: true
+    enabled: false
     order: 50
     layout:
       position: right
@@ -110,6 +112,14 @@ plugins:
     order: 92
   - source: github:quartz-community/fonts
     enabled: true
+    options:
+      fontOrigin: googleFonts
+      h6:
+        name: Kalam
+        weights: [400]
+      handwritten:
+        name: Kalam
+        weights: [400]
   - source: github:quartz-community/remove-draft
     enabled: true
   - source: github:quartz-community/explicit-publish
@@ -171,7 +181,7 @@ plugins:
       groupOptions:
         grow: true
   - source: github:quartz-community/backlinks
-    enabled: true
+    enabled: false
     layout:
       position: right
       priority: 50
@@ -182,11 +192,14 @@ plugins:
       priority: 10
   - source: github:quartz-community/content-meta
     enabled: true
+    options:
+    showReadingTime: true
+    showComma: true
     layout:
       position: beforeBody
       priority: 20
   - source: github:quartz-community/tag-list
-    enabled: false
+    enabled: true
     layout:
       position: beforeBody
       priority: 30
@@ -208,7 +221,7 @@ plugins:
       priority: 35
       group: toolbar
   - source: github:quartz-community/breadcrumbs
-    enabled: true
+    enabled: false
     layout:
       position: beforeBody
       priority: 5
@@ -222,7 +235,7 @@ plugins:
       position: afterBody
       priority: 10
   - source: github:quartz-community/footer
-    enabled: true
+    enabled: false
     options:
       links:
         GitHub: https://github.com/jackyzha0/quartz
@@ -262,7 +275,7 @@ plugins:
       name: quartz-themes
       repo: github:saberzero1/quartz-themes
       subdir: plugin
-    enabled: true
+    enabled: false
     options:
       theme: default
   - source: github:quartz-community/obsidian-plugin-excalidraw
@@ -284,7 +297,9 @@ layout:
         beforeBody: []
         left: []
         right: []
-    content: {}
+    content:
+      exclude:
+        - backlinks
     folder:
       exclude:
         - reader-mode
