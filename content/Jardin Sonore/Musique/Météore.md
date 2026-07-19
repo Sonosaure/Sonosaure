@@ -1,5 +1,12 @@
 ![[Leonid_meteors_in_Western_Australia_article.jpg]]
 
+- **Météorite** — fragment solide d’un météoroïde qui **atteint le sol** après avoir survécu à la traversée de l’atmosphère.
+  
+- **Météore** — phénomène **lumineux ou radio** produit par l’entrée d’un météoroïde dans l’atmosphère, une **trace** plutôt qu’un objet.
+  
+- **Météoroïde** — petit corps rocheux ou métallique qui **circule dans l’espace** avant toute interaction avec l’atmosphère.
+
+
 Chaque fois qu'un météore traverse l'atmosphère, il laisse derrière lui une courte traînée de particules ionisées.
 
 Pendant quelques secondes, cette traînée réfléchit - tel un `miroir sonore` - les signaux radio à haute fréquence émis par des stations situées aux quatre coins du monde. Le mouvement de la traînée du météore, provoqué par les vents de la haute atmosphère, modifie la fréquence du signal réfléchi.

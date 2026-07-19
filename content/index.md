@@ -1,20 +1,19 @@
+---
+title: À propos
+---
 ###### _Bienvenu·e dans mon jardin sonore !_ 
 
-### À propos
- _Sonosaure_: contraction entre _son_ — ce qui vibre — et _dinosaure_ — ce qui est ancien, disparu. Une manière d’évoquer que nombre des matières sonores travaillées proviennent d’espèces et de lieux  en voie d’extinction. Le principe est simple: chaque pièce naît d’un lieu et de son écosystème sonore. 
+ _Sonosaure_ est une contraction entre _son_ — ce qui vibre — et _dinosaure_ — ce qui est ancien, disparu. Une manière d’évoquer que nombre des matières sonores travaillées proviennent d’espèces et de lieux en voie de disparition. Tantôt trésor, tantôt vestige, tantôt vivant, tantôt fantôme — Sonosaure archive mon travail musical avec les timbres et les voix electr'autres qu'humaines. Chaque instrumentalisation naît du [[paysage sonore]] d'un lieu et oeuvre au dialogue musical avec ses habitant·e: poissons et crustacés d'un récif corallien, amphibiens d'une zone humide, chants d'oiseaux d'une hêtraie-sapinière, oscillations solaires et vibrations radioastronomiques, etc. 
  
- - Poissons et crustacés d'un **récif corallien**: [[Corail Polyphonique]]
- - Amphibiens d'une **zone humide**: les [[Grenouilles Pygmées]] 
- - Chants d’oiseaux d'une **hêtraie‑sapinière**: 
- - oscillations solaires et vibrations radio**astronomiques**: [[RadioAstro]]
- - etc.
 
-Tantôt trésor, tantôt vestige, tantôt vivant, tantôt fantôme — Sonosaure est l'archive sensible de mon travail musical avec les timbres et les voix electr'autres qu'humaines. 
 
-###### _Bonne écoute !_ 
-
+> [!TIP] Selection Musicale
+ >- [[Corail Polyphonique]] 
+ >- [[Grenouilles Pygmées]] 
+ >- CoucOu
+ >- [[RadioAstro]] 
+ >- [[Météore]]
 
 
 
-
-
+ ###### _Bonne écoute :)_
